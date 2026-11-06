@@ -1,1 +1,3 @@
 .hoplite/
+__pycache__/
+*.py[cod]
