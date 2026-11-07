@@ -1,28 +1,22 @@
-"""Mix the voice with the cued sound effects and a quiet music bed -> build/mix.wav (48 kHz stereo).
+"""Mix the voice with the cued sound effects and a quiet music bed -> build/part<N>/mix.wav (48 kHz stereo).
 
 The voice track is used as-is; music ducks under it and sound effects sit below it.
 """
-import subprocess
 from pathlib import Path
 
 import numpy as np
 import soundfile as sf
 
+from config import BUILD
 from storyboard import CHAPTERS, END, SCENES, SFX
-from transcribe import AUDIO
+from voice import decode, voice_track
 
 HERE = Path(__file__).resolve().parent
 AUDIO_DIR = HERE / "assets" / "audio"
-OUT = HERE / "build" / "mix.wav"
+OUT = BUILD / "mix.wav"
 SR = 48000
 MAX_LEN = {"ding_elevator": 1.6, "crickets": 1.7, "scratch": 0.9, "jingle": 2.0}  # seconds, faded out
 MUSIC_DB, DUCK_DB = -31.0, -7.0  # bed level (RMS dBFS) and extra reduction while someone talks
-
-
-def decode(path):
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-ac", "2", "-ar", str(SR), "-f", "f32le", "-"],
-                         check=True, capture_output=True).stdout
-    return np.frombuffer(raw, np.float32).reshape(-1, 2).copy()
 
 
 def db(x):
@@ -39,7 +33,7 @@ def thud():
 
 
 def clip(name):
-    s = thud() if name == "thud" else decode(AUDIO_DIR / f"{name}.mp3")
+    s = thud() if name == "thud" else decode(AUDIO_DIR / f"{name}.mp3", SR, 2)
     env = np.abs(s).max(1)
     s = s[int(np.argmax(env > 0.02 * env.max())):]  # trim leading silence so the hit lands on the cue
     if name in MAX_LEN:
@@ -50,7 +44,7 @@ def clip(name):
 
 
 def music_bed(total, voice):
-    loop = decode(AUDIO_DIR / "music_chill_melody.mp3")
+    loop = decode(AUDIO_DIR / "music_chill_melody.mp3", SR, 2)
     xf = int(1.0 * SR)
     ramp = np.linspace(0, 1, xf, dtype=np.float32)[:, None]
     bed = loop.copy()
@@ -90,10 +84,8 @@ def events():
 
 def main():
     total = int(round(END * SR))
-    voice = decode(AUDIO)[:total]
-    out = np.zeros((total, 2), np.float32)
-    out[:len(voice)] += voice
-    out += music_bed(total, voice)
+    voice = voice_track(SR, 2, total)
+    out = voice + music_bed(total, voice)
     cache = {}
     for name, t, gain in events():
         if name not in cache:
@@ -102,7 +94,7 @@ def main():
         i = int(t * SR)
         n = min(len(s), total - i)
         out[i:i + n] += s[:n]
-    OUT.parent.mkdir(exist_ok=True)
+    OUT.parent.mkdir(parents=True, exist_ok=True)
     sf.write(OUT, limit(out), SR, subtype="PCM_16")
     print(f"wrote {OUT.relative_to(HERE)}: {total / SR:.1f} s, {len(events())} sound effects")
 
