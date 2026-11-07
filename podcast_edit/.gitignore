@@ -1,0 +1,4 @@
+.venv/
+out/
+vo16k.f32
+*.log
