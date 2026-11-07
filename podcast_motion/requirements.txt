@@ -1,0 +1,6 @@
+faster-whisper
+librosa
+numpy
+pillow
+sherpa-onnx
+soundfile
