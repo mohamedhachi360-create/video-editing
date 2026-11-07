@@ -1,0 +1,22 @@
+THREE CARDS MOTION - CapCut project (CapCut for Windows PC)
+
+1. Close CapCut.
+2. Right-click this zip file > Extract All.
+3. In the extracted folder, double-click INSTALL_ON_WINDOWS.bat and press Enter.
+   If Windows shows a security warning, click "More info" > "Run anyway" (or "Run").
+4. Open CapCut. The project "Three Cards Motion" is in your projects list.
+
+Inside the project (1920x1080, 30 fps, 7 seconds):
+- Background: animated dark blue to blue gradient (video)
+- Card 1 (left), Card 2 (center), Card 3 (right): card images
+- Number 1, Number 2, Number 3: editable text (Poppins Bold)
+All motion is made with keyframes, so you can change it in CapCut.
+To change a number, click its text on the timeline and type new text.
+
+Manual install (if the installer does not work):
+- Copy the "Three Cards Motion" folder into CapCut's projects folder
+  (CapCut > Settings > Draft location).
+- Open the project. If CapCut says media is missing, click Link / Relink and pick
+  the files from the "media" folder inside the project.
+
+CapCut on a phone or Mac: use three_cards_motion.mp4 instead (import it like any video).
