@@ -1,13 +1,33 @@
 """The word-level transcript: cue lookups, speaker turns and caption chunks."""
 import json
 import re
+import subprocess
 from dataclasses import dataclass, field
-from pathlib import Path
 
+from config import AUDIO, AUDIO_END, INTRO, PART, RECAP, VOICE_START, data_dir
 from gfx import font
 
-HERE = Path(__file__).resolve().parent
-WORDS = json.loads((HERE / "data" / "words.json").read_text())
+
+def _words(part):
+    return json.loads((data_dir(part) / "words.json").read_text())
+
+
+def _shift(words, dt):
+    return [dict(w, s=round(w["s"] + dt, 3), e=round(w["e"] + dt, 3)) for w in words] if dt else words
+
+
+def _file_seconds(path):
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+                         check=True, capture_output=True, text=True).stdout
+    return float(out)
+
+
+# Word times are seconds in the video: the recap of the previous part (if any), then this part.
+_end = AUDIO_END if AUDIO_END is not None else _file_seconds(AUDIO)
+WORDS = _shift([w for w in _words(PART) if w["e"] <= _end], VOICE_START)
+if RECAP:
+    WORDS = _shift([w for w in _words(PART - 1) if RECAP[0] <= w["s"] and w["e"] <= RECAP[1]],
+                   INTRO - RECAP[0]) + WORDS
 VOICE_END = max(w["e"] for w in WORDS)
 
 
