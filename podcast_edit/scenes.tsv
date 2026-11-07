@@ -1,0 +1,221 @@
+# start_sec	image (query | @studio | @card:Title|Subtitle)	sfx
+0	@card:Enjoy English Talks|Small Talk: Small Words Open Big Doors	jingle
+7.8	@studio	
+12.9	succulent	
+18	cup of tea	
+24.4	@studio2	
+30.6	elevator	ding_elevator
+42.9	elevator buttons	
+55.9	elevator doors	crickets
+65.7	@studio	laugh
+70.2	shoes	
+77.9	nervous	
+89.3	ballet	whoosh
+100.3	dancing couple	
+110.8	@studio2	
+114.8	acoustic guitar	whoosh
+125.8	guitar chord hand	
+129.1	coworkers talking office	
+142.9	elevator	ding_elevator
+146.6	@studio	
+149.9	@card:Like|If you enjoy the podcast	click
+154.7	@card:Subscribe|Enjoy English Talks	click
+158.3	smartphone	
+169.9	@card:What Is Small Talk?|Short, friendly conversations	whoosh
+177.4	cloudy sky	
+182	park	
+185	breakfast table	
+188.5	@studio2	
+202.4	handshake	
+212.9	open door light	whoosh
+221.8	door wooden	
+228.8	door	
+238.1	@studio	
+245.7	@card:Small Words Open Big Doors|Today's mantra	chime
+255.7	sunny weather	
+267.1	@studio2	
+274.5	brain idea	
+286.1	coworker office	
+292	@card:Way 1: The Weather Door|Weather + one thing about you	chime
+297	rain window	
+304	weather sky clouds	
+311	rain umbrella street	
+317	umbrella	
+328	hot coffee	
+340	sunny day outside	
+346	wilted plant	
+354	watering can	
+368	garden	whoosh
+377	mailbox	
+382	bakery bread	
+388	neighborhood	
+396	tomatoes garden	
+411	@card:Nice weather, right?|Phrase #1	correct
+426	cold morning snow	
+433	dog walking	
+444	puppy	
+453	@studio	
+461	@studio2	
+466	window view rain	
+479	mirror morning	
+485	clock	
+494	@card:Weather + Me|Small words open big doors	pop
+500	@studio	
+506	pizza	pop
+511	@card:Way 2: The Weekend Question|Monday looks back, Friday looks forward	chime
+519	@studio2	
+523	calendar date	
+533	planner	
+546	coffee mug work	
+550	couch living room	
+556	grandparents	
+562	sleeping bed	
+570	dog grass	whoosh
+585	dog stick	
+592	people laughing	laugh
+604	pasta	
+614	@studio	
+626	@card:bored  ≠  boring|"My weekend is boring, so I am bored."	correct
+639	purple	
+647	hammock	
+663	@card:How was your weekend?|"Nothing special, but it was nice."	correct
+676	@studio2	
+681	banana bread	
+688	playing guitar	
+694	@studio	
+707	writing notebook	page
+718	homework desk	
+728	dog leash	
+737	white dog	
+742	@card:plans|Things you decide to do before you do them	pop
+751	agenda	
+760	@studio2	
+768	@studio	
+775	sandwich lunch	pop
+779	@card:Way 3: The Food Bridge|Food connects two people	chime
+783	bridge	
+788	people eating together	
+801	@studio2	
+806	coffee smell	
+813	street cafe	
+818	lunch box	
+822	office lunch	
+831	soup bowl	scratch
+837	lunch	
+851	spicy peppers	
+855	market vegetables	
+862	@studio	
+868	curious	
+882	red chili	
+887	@card:Have you tried…?|Phrase #3	correct
+894	cafe	
+899	banana bread	
+908	@studio2	
+919	smartphone message	
+928	bakery shop	
+934	bread rolls	
+942	@studio	
+947	dinner	
+958	snacks	
+963	eggs toast breakfast	
+972	@studio2	
+984	@card:The Food Bridge|Everyone eats. Ask one food question. Then listen.	pop
+992	gift box	whoosh
+1001	@card:Way 4: The Little Gift|A small, true compliment + a question	chime
+1008	gifts	
+1014	handbag	
+1020	meeting office	
+1027	@studio	
+1032	smiling woman	
+1043	@studio2	
+1048	jacket	
+1062	sunflower	
+1069	jacket fashion	
+1081	@studio	
+1086	smile	
+1097	drawing pencil	
+1104	@studio2	
+1114	family meal	
+1121	running	
+1125	man playing guitar	
+1135	music	
+1149	happy family	
+1160	@card:I really like your…|Phrase #4	correct
+1167	garden flowers	
+1172	green plants	
+1181	plant pot	
+1193	wilted plant	
+1201	coworkers talking office	
+1213	dog tail	
+1228	@studio	
+1237	@studio2	whoosh
+1248	@card:Way 5: The Magic Return|Answer, then throw the ball back	chime
+1254	magic	
+1260	@studio	
+1270	@card:What about you?|Three words	pop
+1273	elevator	ding_elevator
+1287	elevator buttons	
+1293	puppy playing	whoosh
+1301	puppy playing	
+1304	@studio2	
+1313	empty room	
+1322	@studio	
+1333	@card:What about you?  •  And you?  •  How about you?|Three ways to say it	pop
+1342	ballet	whoosh
+1353	worried	
+1366	dancing	
+1381	@studio2	
+1396	classroom	
+1400	@card:"I'm good, thanks. A little tired. What about you?"|Phrase #5	correct
+1412	keychain	
+1429	soup bowl	scratch
+1433	nervous	
+1445	@studio	
+1455	@studio2	
+1459	headphones podcast	
+1472	@studio	
+1478	mirror morning	
+1491	@studio2	
+1499	@card:The Magic Return|What about you? No more six floors of silence.	pop
+1506	@card:Practice Time|In the elevator with the new coworker	chime
+1515	elevator doors	ding_elevator
+1525	rain umbrella	
+1534	bus	
+1539	@studio	
+1543	river	
+1549	bakery shop	
+1557	@studio2	scratch
+1573	@studio	
+1588	cafe coffee	
+1596	dog stick	
+1607	coffee latte	
+1610	jacket	
+1616	present gift	
+1623	@studio2	
+1633	@card:Weather • Weekend • Food • Compliment • Magic Return|You used every phrase!	correct
+1645	@studio	
+1651	puppy playing	
+1659	@studio2	
+1664	elevator	
+1678	@card:You're not alone|One small door, opened kindly	chime
+1685	open door light	
+1692	window morning	
+1700	clock	
+1704	@studio	
+1713	puppy playing	
+1720	@studio2	
+1726	sunrise	
+1734	@studio	
+1741	@studio2	
+1753	@card:Let's Review|What we learned today	whoosh
+1768	@card:Small Words Open Big Doors|Today's mantra	chime
+1774	@card:1. The Weather Door|Nice weather, right?	pop
+1783	@card:2. The Weekend Question|Nothing special, but it was nice.	pop
+1794	@card:3. The Food Bridge|Have you tried…?	pop
+1805	@card:4. The Little Gift|I really like your…	pop
+1816	@card:5. The Magic Return|What about you?	pop
+1822	@studio	
+1839	@studio2	
+1848	@card:Like • Subscribe • Share|Enjoy English Talks	click
+1864	@card:Comment below|What's your favorite easy question to start a conversation?	pop
+1871	@card:See you next time!|Keep practicing your English	jingle

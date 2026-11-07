@@ -1,0 +1,148 @@
+# Credits
+
+All third-party media is CC0 / public domain. Attribution is not required but is listed here.
+
+## Images (Openverse)
+
+- Photo of a recording session of an acoustic Epihone guitar — pbonahora (CC0, wordpress): https://wordpress.org/photos/photo/48463ef2fe/
+- Domain Seo — Serpstat (CC0, stocksnap): https://stocksnap.io/photo/domain-seo-KIJQ4DNA7K
+- Bagels Bread — Foodie Girl (CC0, stocksnap): https://stocksnap.io/photo/bagels-bread-GI73BADLXF
+- Vintage Bakery — Daria Shevtsova (CC0, stocksnap): https://stocksnap.io/photo/vintage-bakery-ZAG3KUMDTW
+- Green Trees — Ian Espinosa (CC0, stocksnap): https://stocksnap.io/photo/green-trees-NA222DHIZY
+- Vegan Banana Bread — Anariel Design (CC0, wordpress): https://wordpress.org/photos/photo/94261d95a9/
+- Idea Brain — Bango Renders (CC0, stocksnap): https://stocksnap.io/photo/idea-brain-5NLKT00MVB
+- A blue plate contains two round, brownish bread rolls alongside a serving of mashed potatoes mixed w — quizzycal (CC0, wordpress): https://wordpress.org/photos/photo/80763995ea/
+- Family Breakfast — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/family-breakfast-LSPZTLDLOS
+- Bridge Traffic — Ken Cooper (CC0, stocksnap): https://stocksnap.io/photo/bridge-traffic-UP5VBTF5YP
+- Bus Internal — Burst (CC0, stocksnap): https://stocksnap.io/photo/bus-internal-OYVLHTN5GU
+- Cafe Coffee — Leeroy (CC0, stocksnap): https://stocksnap.io/photo/cafe-coffee-FWX6GJJ0WV
+- Coffee Cappuccino — Vicky Gu (CC0, stocksnap): https://stocksnap.io/photo/coffee-cappuccino-9QUVG8OY1I
+- Seasonal Backgrounds — Seacoast Sage (CC0, stocksnap): https://stocksnap.io/photo/seasonal-backgrounds-QQA4QVER48
+- Home Education — Words as Pictures (CC0, stocksnap): https://stocksnap.io/photo/home-education-BG5ITY3BNT
+- Watch Clock — Ricky Kharawala (CC0, stocksnap): https://stocksnap.io/photo/watch-clock-ANMTHDGHGJ
+- A vibrant view of the sea with clear blue waters, gently rippling under a partly cloudy sky. In the  — Nick Krastev (CC0, wordpress): https://wordpress.org/photos/photo/78663ea9e0/
+- Coffee Latte — Natalie Collins (CC0, stocksnap): https://stocksnap.io/photo/coffee-latte-9XMNW6M2F6
+- Workspace Office — Top Down Tech (CC0, stocksnap): https://stocksnap.io/photo/workspace-office-QJFP4CM7G3
+- Fresh Espresso — Tom Swinnen (CC0, stocksnap): https://stocksnap.io/photo/fresh-espresso-TIFO0HSADL
+- Winter Snow — Mary (CC0, stocksnap): https://stocksnap.io/photo/winter-snow-DDP25FECQG
+- Home House — Breather (CC0, stocksnap): https://stocksnap.io/photo/home-house-87ONRC5PWV
+- Business Meeting — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/business-meeting-Z1ZIMB54UM
+- Business Women — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/business-women-BOWOZQBREK
+- Cup of tea on a peach background (table) — Olga Gleckler (CC0, wordpress): https://wordpress.org/photos/photo/56362fcf20/
+- Curious Woman — Lisa Fotios (CC0, stocksnap): https://stocksnap.io/photo/curious-woman-45A1UJ9L3W
+- Couple Dancing — Senior Living (CC0, stocksnap): https://stocksnap.io/photo/couple-dancing-2CMQGMCQCK
+- Couple Dancing — Senior Living (CC0, stocksnap): https://stocksnap.io/photo/couple-dancing-D4UAHMSKKC
+- Dinner rolls at a restaurant on a wooden board — ChrisEdwardsCE (CC0, wordpress): https://wordpress.org/photos/photo/3096329d64/
+- Husky Animal — World Wildlife (CC0, stocksnap): https://stocksnap.io/photo/husky-animal-VS1UAW8WLU
+- Walking Dog — Matt Bango (CC0, stocksnap): https://stocksnap.io/photo/walking-dog-GJJ6TGNARW
+- Husky Animal — Matt Bango (CC0, stocksnap): https://stocksnap.io/photo/husky-animal-RAZS18FY8D
+- Animals Puppy — Torsten Dettlaff (CC0, stocksnap): https://stocksnap.io/photo/animals-puppy-OOH59BAHBL
+- Dog Walk — Matt Bango (CC0, stocksnap): https://stocksnap.io/photo/dog-walk-CSF34KLDWR
+- Red Door — Ryan McGuire (CC0, stocksnap): https://stocksnap.io/photo/red-door-7D54868965
+- Antique Building — Marko Tabak (CC0, stocksnap): https://stocksnap.io/photo/antique-building-TC1VEFJ1O7
+- Child Home — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/child-home-NIUIDH2GSG
+- Couple Cooking — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/couple-cooking-FEGFELL9EP
+- Mid-century modern elevators — Topher (CC0, wordpress): https://wordpress.org/photos/photo/59562018b9/
+- Elevator Buttons — Kevin Sequeira (CC0, stocksnap): https://stocksnap.io/photo/elevator-buttons-QNFDIZPFN6
+- Mid-century modern elevator doors — Topher (CC0, wordpress): https://wordpress.org/photos/photo/24162018bd/
+- Empty conference room seats. — Nilo Velez (CC0, wordpress): https://wordpress.org/photos/photo/60861b1e02/
+- Christmas Kitchen — Family Moments (CC0, stocksnap): https://stocksnap.io/photo/christmas-kitchen-JRUQ4RDI65
+- Flowers Garden — Ales Krivec (CC0, stocksnap): https://stocksnap.io/photo/flowers-garden-LB6S9HXDJ2
+- Macro Flower — Macro Mama (CC0, stocksnap): https://stocksnap.io/photo/macro-flower-R5A1SRFKG9
+- Gift Box — Bruce Mars (CC0, stocksnap): https://stocksnap.io/photo/gift-box-QYVIUVMVSA
+- Gift Present — Icons8 team (CC0, stocksnap): https://stocksnap.io/photo/gift-present-EDDBC2KSAS
+- Grandmother Child — PS Imaging (CC0, stocksnap): https://stocksnap.io/photo/grandmother-child-ZK25PFAY2G
+- Green Plants — Paulina Lohunko (CC0, stocksnap): https://stocksnap.io/photo/green-plants-QIU66VU3R3
+- People Woman — Matthew Henry (CC0, stocksnap): https://stocksnap.io/photo/people-woman-5PPH4HS0GL
+- Hammock — Topher (CC0, wordpress): https://wordpress.org/photos/photo/211620ea18/
+- Woman Fresh — Beauty and Fashion (CC0, stocksnap): https://stocksnap.io/photo/woman-fresh-JECZQ1QNZM
+- Work Business — Matt Moloney (CC0, stocksnap): https://stocksnap.io/photo/work-business-WQ2JMRIIQB
+- Happy Family — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/happy-family-VR3YQFV52D
+- Recording Studio — Kristin Hardwick (CC0, stocksnap): https://stocksnap.io/photo/recording-studio-NJCWWNF3FM
+- Child Homework — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/child-homework-GV5GIEXDBA
+- Coffee Hot — Nathan Dumlao (CC0, stocksnap): https://stocksnap.io/photo/coffee-hot-4DW84GDZ41
+- Yellow Jacket — Justin Luebke (CC0, stocksnap): https://stocksnap.io/photo/yellow-jacket-C6J16TFD75
+- Clothes Jackets — Clark Street Mercantile (CC0, stocksnap): https://stocksnap.io/photo/clothes-jackets-72V88M4FAC
+- Lego keychains — Luisa Ravelli (CC0, wordpress): https://wordpress.org/photos/photo/930639990c/
+- Vegan lunch. — Anariel Design (CC0, wordpress): https://wordpress.org/photos/photo/69761bd8fe/
+- Halal Lunch box of WC Asia Contributor Day — Raju Alam (CC0, wordpress): https://wordpress.org/photos/photo/78163ef3f2/
+- Candle, hands, magic, ceremony, — El Stadnik (CC0, wordpress): https://wordpress.org/photos/photo/2966264f29/
+- Row of mailboxes — Jennifer Bourn (CC0, wordpress): https://wordpress.org/photos/photo/55761edb78/
+- People Man — Richard Revel (CC0, stocksnap): https://stocksnap.io/photo/people-man-QSRGZU2UCG
+- Food Fruits — Lukas Budimaier (CC0, stocksnap): https://stocksnap.io/photo/food-fruits-AWJD4WV6W1
+- Writing Papers — Helloquence (CC0, stocksnap): https://stocksnap.io/photo/writing-papers-Y01VDYAX63
+- Man Shaving — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/man-shaving-BFASQPNDEK
+- Guitar Music — Paulina Lohunko (CC0, stocksnap): https://stocksnap.io/photo/guitar-music-8N3NW8ZGRT
+- Damascene neighborhood — Adnan Al-Malek (CC0, wordpress): https://wordpress.org/photos/photo/47063f60e5/
+- Man Thinking — Matt Moloney (CC0, stocksnap): https://stocksnap.io/photo/man-thinking-IA9FDDNLU5
+- Food Avocado — Brooke Lark (CC0, stocksnap): https://stocksnap.io/photo/food-avocado-1DILGG9DVG
+- Open Doorway — Bango Renders (CC0, stocksnap): https://stocksnap.io/photo/open-doorway-U2RCJV3HDB
+- Park Bench — Gabriel Garcia Marengo (CC0, stocksnap): https://stocksnap.io/photo/park-bench-OHB52SYM4B
+- Pasta Flour — Jorge Zapata (CC0, stocksnap): https://stocksnap.io/photo/pasta-flour-I4MIIMHZ5M
+- Father Son — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/father-son-JJF51GGI7A
+- Women Working — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/women-working-K8V1WEIS2D
+- Pizza — Ketan Patel (CC0, wordpress): https://wordpress.org/photos/photo/81863219cf/
+- Office Work — Ian Schneider (CC0, stocksnap): https://stocksnap.io/photo/office-work-CH9EXU7YTW
+- Plant Pot — Nathalie E. Julien (CC0, stocksnap): https://stocksnap.io/photo/plant-pot-1HDPBNPBSV
+- Guy Man — Gabriel Gurrola (CC0, stocksnap): https://stocksnap.io/photo/guy-man-EOG6UD4Z29
+- Gift Box — George Dolgikh (CC0, stocksnap): https://stocksnap.io/photo/gift-box-KBGJKIUPDH
+- Dog Puppy — Matt Bango (CC0, stocksnap): https://stocksnap.io/photo/dog-puppy-TBA5BQMCQE
+- People Man — Marvin Meyer (CC0, stocksnap): https://stocksnap.io/photo/people-man-IZ83Q544MD
+- Purple Pink — Rodion Kutsaev (CC0, stocksnap): https://stocksnap.io/photo/purple-pink-4MT2FRBJ88
+- Red Umbrella — Gabriel Santiago (CC0, stocksnap): https://stocksnap.io/photo/red-umbrella-45JIYYO371
+- Asian People — Redd Angelo (CC0, stocksnap): https://stocksnap.io/photo/asian-people-VWSTFMADAL
+- Mirror Window — Paulina Lohunko (CC0, stocksnap): https://stocksnap.io/photo/mirror-window-UVB3URX1FM
+- Red chilli plant — Subash Poudel (CC0, wordpress): https://wordpress.org/photos/photo/9136374ddf/
+- River Landscape — Mike Moloney (CC0, stocksnap): https://stocksnap.io/photo/river-landscape-4POJPLIIEE
+- Running Fitness — Chanan Greenblatt (CC0, stocksnap): https://stocksnap.io/photo/running-fitness-RMDYXIJFJN
+- Grilled Cheese — Foodie Girl (CC0, stocksnap): https://stocksnap.io/photo/grilled-cheese-PBGPOQ3ODV
+- Leather Shoes — Caio Resende (CC0, stocksnap): https://stocksnap.io/photo/leather-shoes-I1GV6WICCT
+- Sleeping Cat — Ian Livesey (CC0, stocksnap): https://stocksnap.io/photo/sleeping-cat-D828LPF94C
+- Mobile Smartphone — JESHOOTS.com (CC0, stocksnap): https://stocksnap.io/photo/mobile-smartphone-DLITZEAVJJ
+- People Browsing — Kristin Hardwick (CC0, stocksnap): https://stocksnap.io/photo/people-browsing-5TSIDK0IPJ
+- Smiling Man — Matt Moloney (CC0, stocksnap): https://stocksnap.io/photo/smiling-man-3LMPSCJQGQ
+- Smiling Woman — Matt Moloney (CC0, stocksnap): https://stocksnap.io/photo/smiling-woman-VTHPEAGBVR
+- WordCamp Snacks! — Topher (CC0, wordpress): https://wordpress.org/photos/photo/524640652e/
+- Small cup of vegetable and sausage stew — mdburnette (CC0, wordpress): https://wordpress.org/photos/photo/2136201d8c/
+- Chili Pepper — Adi Chrisworo (CC0, stocksnap): https://stocksnap.io/photo/chili-pepper-8002II1N54
+- Cafe Wagon in Tokyo Business Street — sysbird (CC0, wordpress): https://wordpress.org/photos/photo/7466339743/
+- Several succulents growing by a window — Josh Pollock (CC0, wordpress): https://wordpress.org/photos/photo/66961f7413/
+- Sunflower Bunch — Tim Mossholder (CC0, stocksnap): https://stocksnap.io/photo/sunflower-bunch-AFXZF2L7ZH
+- Table Chair — Les Anderson (CC0, stocksnap): https://stocksnap.io/photo/table-chair-X2G1D0W9DJ
+- Sky Clouds — Mike Moloney (CC0, stocksnap): https://stocksnap.io/photo/sky-clouds-C7HZXY8OTX
+- Sunrise Morning — Frank Oschatz (CC0, stocksnap): https://stocksnap.io/photo/sunrise-morning-ZJE4KHCDWE
+- Colorful Tomatoes — Nathalie E. Julien (CC0, stocksnap): https://stocksnap.io/photo/colorful-tomatoes-UDGLFNYGTO
+- Hanging umbrellas in Genoa (Italy) — CrestaProject (CC0, wordpress): https://wordpress.org/photos/photo/188635b960/
+- Water can hanging from a tree next to a historic Florida home — ChrisEdwardsCE (CC0, wordpress): https://wordpress.org/photos/photo/50462d2efa/
+- Storm Clouds — Free Nature Stock (CC0, stocksnap): https://stocksnap.io/photo/storm-clouds-KRZSQKJRCT
+- Fluffy white dog running towards the frame with floppy ears — Justin Nealey (CC0, wordpress): https://wordpress.org/photos/photo/543630f779/
+- Wilting flower — Topher (CC0, wordpress): https://wordpress.org/photos/photo/98861fbe36/
+- Early morning. Looking out through the entrance doors. — Paal Joachim Romdahl (CC0, wordpress): https://wordpress.org/photos/photo/893636f70e/
+- A view through a rain-speckled window, showing droplets of water collecting on the glass. — nidhidhandhukiya (CC0, wordpress): https://wordpress.org/photos/photo/61362bda1d/
+- Phone Call — Direct Media (CC0, stocksnap): https://stocksnap.io/photo/phone-call-6WFSVFZQ9F
+- Pencil Notepad — Miguel%20%C1.%20Padri%F1%E1n (CC0, stocksnap): https://stocksnap.io/photo/pencil-notepad-TO01VZ72YC
+
+Studio illustration: `assets/warm_podcast_studio_conversation.png` (from this repo).
+
+## Music and sound effects (Freesound, CC0)
+
+- `music/m1_fat_lofi.mp3` — Fat Lofi Loop — Seth_Makes_Sounds (CC0, freesound #680333)
+- `music/m2_lofi_scoop.mp3` — Lofi Loop Scoop — Seth_Makes_Sounds (CC0, freesound #653510)
+- `music/m3_chill_melody.mp3` — Chill Lofi Melody Loop 95 BPM — holizna (CC0, freesound #629147)
+- `music/m4_jazz_organ.mp3` — Lofi Jazz Organ Loop 95 BPM — holizna (CC0, freesound #629154)
+- `music/m5_ukulele.mp3` — Ukulele quiet background melody — el_boss (CC0, freesound #643565)
+- `music/m6_epiano.mp3` — Chill Lofi Epiano Loop 80 BPM — holizna (CC0, freesound #629170)
+- `sfx/whoosh.mp3` — Swipe Whoosh — (CC0, freesound #60007)
+- `sfx/whoosh_soft.mp3` — digital_whoosh_soft — ludvique (CC0, freesound #71852)
+- `sfx/pop.mp3` — Bubble Pop for UI — el_boss (CC0, freesound #669918)
+- `sfx/ding_elevator.mp3` — Elevator Ding — lmbubec (CC0, freesound #119448)
+- `sfx/crickets.mp3` — crickets — FreethinkerAnon (CC0, freesound #129678)
+- `sfx/laugh.mp3` — Small Crowd Laughing — snakebarney (CC0, freesound #138112)
+- `sfx/chime.mp3` — Chime Notification — Jofae (CC0, freesound #380482)
+- `sfx/correct.mp3` — Quiz Correct Ping 04 — craigscottuk (CC0, freesound #644951)
+- `sfx/click.mp3` — mouse-click-double — pbimal (CC0, freesound #534104)
+- `sfx/scratch.mp3` — Record Scratch #4 — musicvision31 (CC0, freesound #431777)
+- `sfx/page.mp3` — Page Turn 02 — (CC0, freesound #397549)
+- `sfx/jingle.mp3` — jingle1 — soneproject (CC0, freesound #255100)
+
+Fonts: Poppins (SIL Open Font License).
