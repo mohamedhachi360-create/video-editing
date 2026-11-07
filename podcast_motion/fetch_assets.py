@@ -18,7 +18,11 @@ Shopping cart, Briefcase, Thumbs up, Bell, Outbox tray, Red heart, Red question 
 Spaghetti, Eyes, Glowing star, Smiling face with smiling eyes, Door, Couch and lamp, Brick, Key, Light bulb,
 Face with peeking eye, Hand with fingers splayed, Cloud with rain, Megaphone, Hourglass not done, Cricket,
 Thinking face, Books, Repeat button, Man dancing, Musical notes, Globe showing europe-africa, Anxious face with sweat,
-Cross mark, Bullseye, Party popper, Face with tears of joy, Hundred points, Wrapped gift, House""".replace("\n", " ")
+Cross mark, Bullseye, Party popper, Face with tears of joy, Hundred points, Wrapped gift, House,
+Closed umbrella, Snowflake, Sun, Hot face, Hot beverage, Wilted flower, Woman farmer, House with garden, Postbox,
+Bread, Tomato, Sunflower, Dog face, Beach with umbrella, Houses, Crown, Seedling, Handshake, Magic wand, Window,
+Mirror, Stopwatch, Cat face, Wood, Sleeping face, Grinning squinting face, Calendar, Spiral calendar, Partying face,
+Thumbs up, Speaking head, Ear, Family, Person raising hand""".replace("\n", " ")
 
 # (file, url, title, author) - all CC0, from freesound.org
 AUDIO = [
@@ -32,6 +36,7 @@ AUDIO = [
     ("click.mp3", "https://cdn.freesound.org/previews/534/534104_11830391-hq.mp3", "mouse-click-double", "pbimal, freesound #534104"),
     ("scratch.mp3", "https://cdn.freesound.org/previews/431/431777_817038-hq.mp3", "Record Scratch #4", "musicvision31, freesound #431777"),
     ("jingle.mp3", "https://cdn.freesound.org/previews/255/255100_2127539-hq.mp3", "jingle1", "soneproject, freesound #255100"),
+    ("laugh.mp3", "https://cdn.freesound.org/previews/138/138112_1572282-hq.mp3", "Small Crowd Laughing", "snakebarney, freesound #138112"),
     ("music_chill_melody.mp3", "https://cdn.freesound.org/previews/629/629147_12574855-hq.mp3", "Chill Lofi Melody Loop 95 BPM", "holizna, freesound #629147"),
 ]
 

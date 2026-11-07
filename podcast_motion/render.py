@@ -1,7 +1,7 @@
-"""Render the motion-graphics video for the podcast clip (1920x1080, 30 fps).
+"""Render the motion-graphics video for one part of the podcast (1920x1080, 30 fps). Select it with PART=<n>.
 
-  python render.py --stills    contact sheet of key moments -> build/contact_sheet.png
-  python render.py             full video with audio -> output/enjoy_english_talks_part1.mp4
+  python render.py --stills    contact sheet, one frame per scene -> build/part<N>/contact_sheet.png
+  python render.py             full video with audio -> output/enjoy_english_talks_part<N>.mp4
 """
 import argparse
 import math
@@ -19,14 +19,13 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter
 from gfx import (CYAN, FPS, GOLD, H, HOST_COLOR, HOST_NAME, INK, LANCZOS, W, WHITE, bubble, clamp01,
                  ease_in_out, ease_out_back, ease_out_cubic, emoji, lerp, panel, pill, place, portrait,
                  rounded_mask, scale_mask, smoothstep, solid, text_sprite, text_width)
+from config import BUILD, OUT_FILE, PREVIEW, TITLE
 from scenes import SCX, SCY, SX0, SX1, SY0, SY1
-from storyboard import CHAPTERS, END, HOST_APPEAR, SCENES
+from storyboard import CHAPTERS, END, HOST_APPEAR, PREVIEW_AT, SCENES
 from timeline import CAPTION_SIZE, CAPTION_WEIGHT, CHUNKS, VOICE_END, WORDS, speaker_levels, speaking
-from transcribe import AUDIO
+from voice import voice_track
 
 HERE = Path(__file__).resolve().parent
-BUILD, OUTPUT = HERE / "build", HERE / "output"
-OUT_FILE = OUTPUT / "enjoy_english_talks_part1.mp4"
 N_FRAMES = round(END * FPS)
 
 # ---------- background ----------
@@ -119,7 +118,7 @@ def draw_topbar(fr, t):
     k = ease_out_cubic(smoothstep(0.1, 0.8, t))
     dy = -40 * (1 - k)
     place(fr, emoji("headphone", 44, 0.3), 112, 60 + dy, 1 if k >= 1 else 1.0, 0, k)
-    logo = text_sprite("Enjoy English Talks", 30, "Bold")
+    logo = text_sprite(TITLE, 30, "Bold")
     place(fr, logo, 146 + logo.width / 2 - 14, 61 + dy, 1, 0, k)
     i = chapter_at(t)
     tc = CHAPTERS[i][0]
@@ -169,18 +168,12 @@ def draw_wipe(fr, t):
 
 AV_POS = {"bella": (214, 886), "aaron": (1706, 886)}
 AV_D = 196
-VOICE_FEATURES = BUILD / "voice_features.npz"
 
 
 def voice_features():
     """Per-frame loudness and 24 spectrum bands of the voice, for the speaking rings."""
-    if VOICE_FEATURES.exists() and VOICE_FEATURES.stat().st_mtime > AUDIO.stat().st_mtime:
-        d = np.load(VOICE_FEATURES)
-        return d["bands"], d["rms"]
     sr, hop, win = 48000, 1600, 4096
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(AUDIO), "-ac", "1", "-ar", str(sr), "-f", "f32le", "-"],
-                         check=True, capture_output=True).stdout
-    y = np.pad(np.frombuffer(raw, np.float32), (win, win + N_FRAMES * hop))
+    y = np.pad(voice_track(sr, 1, round(END * sr))[:, 0], (win, win + N_FRAMES * hop))
     idx = np.arange(N_FRAMES)[:, None] * hop + win + hop // 2 - win // 2 + np.arange(win)[None, :]
     frames = y[idx]
     spec = np.abs(np.fft.rfft(frames * np.hanning(win), axis=1))
@@ -195,9 +188,7 @@ def voice_features():
     for n in range(1, N_FRAMES):  # fast attack, slower release
         bands[n] = np.maximum(bands[n], bands[n - 1] * 0.72)
         rms[n] = max(rms[n], rms[n - 1] * 0.8)
-    BUILD.mkdir(exist_ok=True)
-    np.savez(VOICE_FEATURES, bands=bands.astype(np.float32), rms=rms.astype(np.float32))
-    return bands, rms
+    return bands.astype(np.float32), rms.astype(np.float32)
 
 
 BANDS, RMS = voice_features()
@@ -372,17 +363,15 @@ def main():
     ap.add_argument("--stills", nargs="*", type=float, help="render these times (s) to build/contact_sheet.png")
     ap.add_argument("--frame", type=float, help="render one full-size frame to build/frame.png")
     args = ap.parse_args()
-    BUILD.mkdir(exist_ok=True)
+    BUILD.mkdir(parents=True, exist_ok=True)
     if args.frame is not None:
         compose(round(args.frame * FPS)).save(BUILD / "frame.png")
         return
     if args.stills is not None:
-        times = args.stills or [3.5, 10.5, 22.5, 24.35, 30.5, 41.0, 51.0, 63.5, 68.9, 77.8, 85.0, 98.9, 107.5, 113.6,
-                                124.8, 127.9, 143.5, 166.0, 176.0, 186.0, 199.3, 211.6, 220.8, 227.9, 237.0, 243.8,
-                                252.5, 265.6, 270.5, 277.2, 290.0, 299.0, 302.0]
+        times = args.stills or [round(s.start + 0.7 * (s.end - s.start), 2) for s in SCENES]
         contact_sheet(times, BUILD / "contact_sheet.png")
         return
-    OUTPUT.mkdir(exist_ok=True)
+    OUT_FILE.parent.mkdir(exist_ok=True)
     video = BUILD / "video.mp4"
     print(f"rendering {N_FRAMES} frames")
     encode(video)
@@ -390,7 +379,8 @@ def main():
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-i", str(BUILD / "mix.wav"),
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
                     "-movflags", "+faststart", str(OUT_FILE)], check=True)
-    print("wrote", OUT_FILE.relative_to(HERE))
+    compose(round(PREVIEW_AT * FPS)).save(PREVIEW, quality=88)
+    print("wrote", OUT_FILE.relative_to(HERE), "and", PREVIEW.relative_to(HERE))
 
 
 if __name__ == "__main__":

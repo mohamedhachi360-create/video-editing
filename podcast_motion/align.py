@@ -1,4 +1,4 @@
-"""Speaker labels and tighter word timings -> data/words.json.
+"""Speaker labels and tighter word timings -> data/part<N>/words.json (run with PART=<n>).
 
 The voice is split into phrases at pauses, each phrase gets a speaker embedding (wespeaker
 ResNet34 via sherpa-onnx), and the phrases are clustered into Bella and Aaron. Pitch alone is not
@@ -14,7 +14,9 @@ import librosa
 import numpy as np
 import sherpa_onnx
 
-from transcribe import AUDIO, SR, load_audio
+from config import DATA, PART
+from transcribe import LOOKAHEAD, SR
+from voice import part_audio
 
 HERE = Path(__file__).resolve().parent
 MODEL = HERE / "build" / "models" / "wespeaker_en_voxceleb_resnet34_LM.onnx"
@@ -22,8 +24,12 @@ MODEL_URL = ("https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-re
              "wespeaker_en_voxceleb_resnet34_LM.onnx")
 HOP = 160  # 10 ms at 16 kHz
 MIN_GAP = 18  # frames of silence that end a phrase
-ANCHORS = {"bella": 3.0, "aaron": 27.0}  # times inside a known phrase of each host
+# Times inside a phrase spoken by each host, per part; they seed the two speaker clusters.
+ANCHORS = {1: {"bella": 3.0, "aaron": 27.0}, 2: {"bella": 2.0, "aaron": 12.0}}[PART]
 TEXT_FIXES = {"Smalltalk,": ["small", "talk,"]}
+# Corrections found by checking pitch: (start, end, speaker) ranges, and whisper words with no voiced sound.
+SPEAKER_FIXES = {2: [(27.5, 32.0, "aaron")]}.get(PART, [])
+DROP = {2: [("Great!", 138.28)]}.get(PART, [])
 
 
 def speech_mask(y):
@@ -92,6 +98,11 @@ def clean_words(words):
         # whisper sometimes repeats the last word of a segment at the start of the next one
         if out and w["p"] < 0.1 and w["e"] - w["s"] < 0.1 and norm(w["w"]) == norm(out[-1]["w"]):
             continue
+        if any(w["w"] == text and abs(w["s"] - t) < 0.05 for text, t in DROP):
+            continue
+        if out and w["w"].startswith("-"):  # "small -talk" -> "small-talk"
+            out[-1] = dict(out[-1], w=out[-1]["w"] + w["w"], e=w["e"])
+            continue
         parts = TEXT_FIXES.get(w["w"])
         if parts:
             step = (w["e"] - w["s"]) / len(parts)
@@ -103,8 +114,8 @@ def clean_words(words):
 
 
 def main():
-    words = clean_words(json.loads((HERE / "data" / "whisper_words.json").read_text())["words"])
-    y = load_audio(AUDIO)
+    words = clean_words(json.loads((DATA / "whisper_words.json").read_text())["words"])
+    y = part_audio(PART, SR, lookahead=LOOKAHEAD if PART > 1 else 0.0)[:, 0]
     speech = speech_mask(y)
     regions = phrases(speech)
     labels, margin = label_regions(regions, embeddings(y, regions))
@@ -124,8 +135,9 @@ def main():
         spk = labels[i]
         if out and not out[-1]["w"].endswith((".", "?", "!")):
             spk = out[-1]["spk"]  # turns only change at the end of a sentence
+        spk = next((who for a, b, who in SPEAKER_FIXES if a <= (w["s"] + w["e"]) / 2 < b), spk)
         out.append({"w": w["w"], "s": round(s, 2), "e": round(e, 2), "spk": spk})
-    (HERE / "data" / "words.json").write_text(
+    (DATA / "words.json").write_text(
         "[\n" + ",\n".join(json.dumps(w) for w in out) + "\n]\n")
 
     print(f"{len(regions)} phrases, {len(out)} words; weakest margins:",
